@@ -10,6 +10,21 @@
     display: flex;
 }
 
+/* RIGHT SIDE OF THE PAGE */
+.right-side {
+    background-color: rgb(118, 113, 113);
+    width: 60vw;
+}
+
+.login-link {
+    color: blue;
+}
+
+.description {
+    background-color: red; /* TEMPORARY */
+}
+
+/* LEFT SIDE OF THE PAGE */
 .left-side {
     position: relative;
     width: 40vw;
@@ -44,7 +59,7 @@
     color: white;
 }
 
-a {
+.caption a {
     color: white;
     margin: 0 0.5rem;
 }
