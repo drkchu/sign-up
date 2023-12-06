@@ -4,6 +4,7 @@
     font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .window-container {
@@ -12,17 +13,97 @@
 
 /* RIGHT SIDE OF THE PAGE */
 .right-side {
-    background-color: rgb(118, 113, 113);
+    background-color: rgb(150, 143, 143);
     width: 60vw;
+}
+
+.description {
+    height: 35vh;
+    padding: 0 1rem;
+}
+
+.description p {
+    position: relative;
+    top: 4rem;
+}
+
+.description h2 {
+    position: relative;
+    top: 8rem;
+}
+
+.form-container {
+    background-color: lightgray;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container h1 {
+    position: relative;
+    left: 1rem;
+    top: 0.5rem;
+}
+
+label {
+    display: block;
+    position: relative;
+    margin: 0.5rem 0;
+    width: 40%;
+}
+
+input {
+    width: 100%;
+}
+
+input:focus {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.signup-form {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50vw;
+    height: auto;
+}
+
+
+.form-row {
+    display: flex;
+    position: relative;
+}
+
+label:first-child {
+    left: 1rem;
+}
+
+label:nth-child(2) {
+    left: 20%;
+}
+
+.bottom-part {
+    height: 30vh;
 }
 
 .login-link {
     color: blue;
 }
 
-.description {
-    background-color: red; /* TEMPORARY */
+button {
+    color: #596D48;
+    height: 5rem;
+    width: 9rem;
 }
+
+button,
+.already-registered  {
+    margin-top: 2rem;
+    margin-left: 2rem;    
+}
+
+
 
 /* LEFT SIDE OF THE PAGE */
 .left-side {

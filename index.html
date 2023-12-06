@@ -15,18 +15,27 @@
         </div>
         <div class="right-side">
             <div class="description">
-                <h1>This is not a real online service!</h1>
-                <p>Derek's Diner is not just a restaurant; it's a global culinary phenomenon. From mouthwatering delicacies to innovative dishes that redefine gastronomy, our restaurant promises an extraordinary dining experience. Join now to be a part of this epicurean journey, where passion meets flavor, and the world becomes your dining table."</p>
+                <p><strong>This is not a real online service! &nbsp;</strong> Derek's Diner is not just a restaurant; it's a global culinary phenomenon. From mouthwatering delicacies to innovative dishes that redefine gastronomy, our restaurant promises an extraordinary dining experience. Join now to be a part of this epicurean journey, where passion meets flavor, and the world becomes your dining table."</p>
                 <h2>You <em>know&nbsp;</em> you want to</h2>
             </div>
-            <form action="google.com">
-                <fieldset>
-                    <legend>This is the form?</legend>
-                    <input type="text">
-                </fieldset>
-            </form>
-            <button>signup</button>
-            <div>Already have an account? <a href="login-link">Log In</a></div>
+            <div class="form-container">
+                <h1>Let's do this!</h1>
+                <form action="" class="signup-form" id="signup-form">
+                    <div class="form-row">
+                        <label for="first-name">First Name<input required type="text" id="first-name"></label>
+                        <label for="last-name">Last Name<input required type="text" id="last-name"></label></div>
+                    <div class="form-row">
+                        <label for="email">Email<input required type="email" id="email"></label>
+                        <label for="phone-number">Phone Number<input required type="text" id="phone-number"></label></div>
+                    <div class="form-row">
+                        <label for="password">Password<input required type="text" id="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$"></label>
+                        <label for="confirm-password">Confirm Password<input required type="text" id="confirm-password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$"></label></div>
+                </form>
+            </div>
+            <div class="bottom-part">
+                <button type="submit" form="signup-form" value="Signup">Sign Up!</button>
+                <div class="already-registered">Already have an account? <a href="">Log In</a></div>
+            </div>
         </div>
     </div>
 </body>
